@@ -59,7 +59,7 @@ button{
 
 .HeroBanner-Container ul{
     display: grid;
-    row-gap: 10px;
+    row-gap: 30px;
     grid-row: 2/3;
     grid-column: 1/2;
     padding: 20px;
@@ -73,6 +73,7 @@ button{
     max-width: 330px;
     display: grid;
     justify-items: center;
+    align-items: center;
 }
 
 
@@ -105,9 +106,21 @@ button{
     font: 1em sans-serif;
     color: white;
     justify-items: center;
-    padding: 40px;
+    padding: 20px;
+    margin-top: -3px;
+    font: 1em sans-serif;
     
 }
+.ContactInfo-Container section h2{
+    font: 1.7em sans-serif;
+    text-transform: uppercase;
+}
+
+.ContactInfo-Container section p{
+    font: 1.5em sans-serif;
+    font-weight: normal;
+}
+
 
 .ContactInfo-Container>section:last-of-type{
     display: grid;
@@ -149,4 +162,22 @@ button{
 
 }
 
+/* Desktop styles for contact information------------------------ */
+@media screen and (min-width: 1100px){
+
+    .ContactInfo-Container{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .ContactInfo-Container>section:first-of-type {
+        justify-self: flex-end;
+        max-width: 300px;
+    }
+
+
+    .ContactInfo-Container>section:last-of-type {
+        justify-self: flex-start;
+    }
+}
 
