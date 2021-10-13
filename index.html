@@ -12,9 +12,67 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
     <script>
-        $(document).ready(()=>{
-            console.log("jQuery/ajax is running...")
+      
+            
+    const GalleryHandler = (e)=>{
+        
+        console.log(e.target.id)
+        document.querySelector("#GalleryTemplateContainer").style.display ="Grid";
+
+
+        if(e.target.innerText === "X"){
+            document.querySelector("#GalleryTemplateContainer").style.display ="none";
+        }
+
+        $(document).ready(()=>{   
+
+            if(e.target.id === "AntiquesBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(`
+                <li> 
+                    <img src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
+                    <img src="/Assets/Gallery/Antiques/Img1After.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
+                    <img src="/Assets/Gallery/Antiques/Img1After.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
+                    <img src="/Assets/Gallery/Antiques/Img1After.png" alt="">
+                </li>
+
+                     `).prependTo("#GalleryTemplate")
+            }
+
+            if(e.target.id === "CraftsmanshipBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+            }
+            if(e.target.id === "ChannelBackBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+            }
+            if(e.target.id === "ClassicsBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+            }
+            if(e.target.id === "DetailWorkBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+            }
+            if(e.target.id === "DreamBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+            }
+            if(e.target.id === "ModernBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+            }
+            if(e.target.id === "TransformationBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+            }
+            if(e.target.id === "TuftedBTN"){
+                document.querySelector("#GalleryTemplate").style.display ="grid";
+            }
+
         });
+
+    }
     </script>
 
 </head>
@@ -80,45 +138,57 @@
                 <li>
                     <h2>Antiques</h2>
                     <img src="/Assets/Gallery/AntiquesCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="AntiquesBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li>
                 <li>
                     <h2>Craftsmanship</h2>
                     <img src="/Assets/Gallery/CraftsmanshipCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="CraftsmanshipBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li>
                 <li>
                     <h2>Channel Back</h2>
                     <img src="/Assets/Gallery/ChannelBackCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="ChannelBackBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li> <li>
                     <h2>Classics</h2>
                     <img src="/Assets/Gallery/ClassicsCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="ClassicsBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li> <li>
                     <h2>Detail Work</h2>
                     <img src="/Assets/Gallery/DetailWorkCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="DetailWorkBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li> <li>
                     <h2>Dream</h2>
                     <img src="/Assets/Gallery/DreamCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="DreamBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li> <li>
                     <h2>Modern</h2>
                     <img src="/Assets/Gallery/ModernCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="ModernBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li> <li>
                     <h2>Transformation</h2>
                     <img src="/Assets/Gallery/TransformationCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="TransformationBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li> <li>
                     <h2>Tufted</h2>
                     <img src="/Assets/Gallery/TuftedCover.png" alt="">
-                    <button>View Gallery</button>
+                    <button id="TuftedBTN" onclick="GalleryHandler(event)">View Gallery</button>
                 </li>
             </ul>
         </div>
     </footer>
+
+    <aside>
+
+        <div class="GalleryTemplate-Container" id="GalleryTemplateContainer">
+            <button onclick="GalleryHandler(event)">X</button>
+            <ul id="GalleryTemplate" ></ul>
+          
+
+          
+        </div>
+
+    </aside>
 </body>
 
 </html> 

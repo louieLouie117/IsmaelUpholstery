@@ -167,7 +167,7 @@ button{
 
     .ContactInfo-Container{
         grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
+        column-gap: 100px;
     }
 
     .ContactInfo-Container>section:first-of-type {
@@ -242,6 +242,34 @@ button{
     grid-column: 1/2;    
 }
 
-@media screen and (min-width: 1100px) {
+/* @media screen and (min-width: 1100px) {
     
+} */
+
+
+
+.GalleryTemplate-Container{
+    display: none;
+    background: rgba(0, 0, 0, 0.761);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    justify-items: center;
+}
+
+.GalleryTemplate-Container button{
+    color: white;
+    border: solid 2px white;
+    background: rgba(0, 0, 0, 0.637);
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+#GalleryTemplate{
+    display: none;
 }
