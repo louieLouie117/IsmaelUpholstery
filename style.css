@@ -181,3 +181,67 @@ button{
     }
 }
 
+
+.Gallery-Container{
+    display: grid;
+    margin-top: 0px;
+    /* height: 400px; */
+}
+
+
+.Gallery-Container ul::-webkit-scrollbar{
+   display: none;
+}
+
+
+.Gallery-Container ul{
+    display: flex;
+    overflow: scroll;
+    width: auto;
+    column-gap: 40px;
+    padding: 20px;
+}
+
+
+.Gallery-Container ul li{
+    display: grid;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    font: 1em sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+
+}
+
+.Gallery-Container ul li h2{
+    justify-self: left;
+    padding-left: 10px;
+}
+
+.Gallery-Container ul li img{
+    width: 300px;
+    height: auto;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.659);
+    border-radius: 13px;
+
+}
+
+
+.Gallery-Container ul li button{
+    background: rgba(0, 0, 0, 0.57);
+    color: white;
+    border: solid white 1px;
+    width: 150px;
+    font: 1em sans-serif;
+    height: 50px;
+    border-radius: 10px;
+    grid-row: 2/3;
+    grid-column: 1/2;    
+}
+
+@media screen and (min-width: 1100px) {
+    
+}
