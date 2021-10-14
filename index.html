@@ -11,9 +11,7 @@
     <script src="script.js" async=""></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
-    <script>
-      
-            
+    <script>           
     const GalleryHandler = (e)=>{
         
         console.log(e.target.id)
@@ -29,18 +27,7 @@
             if(e.target.id === "AntiquesBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
                 $(`
-                <li> 
-                    <img src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
-                    <img src="/Assets/Gallery/Antiques/Img1After.png" alt="">
-                </li>
-                <li> 
-                    <img src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
-                    <img src="/Assets/Gallery/Antiques/Img1After.png" alt="">
-                </li>
-                <li> 
-                    <img src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
-                    <img src="/Assets/Gallery/Antiques/Img1After.png" alt="">
-                </li>
+                
 
                      `).prependTo("#GalleryTemplate")
             }
@@ -133,7 +120,7 @@
         </div>
     </main>
     <footer>
-        <div class="Gallery-Container">
+        <div class="GalleryCover-Container">
             <ul>
                 <li>
                     <h2>Antiques</h2>
@@ -182,7 +169,30 @@
 
         <div class="GalleryTemplate-Container" id="GalleryTemplateContainer">
             <button onclick="GalleryHandler(event)">X</button>
-            <ul id="GalleryTemplate" ></ul>
+            <ul id="GalleryTemplate" >
+
+
+                <li class="BeforeAfter"> 
+                    <img id="Img1Before" src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
+                    <img id="Img1After" src="/Assets/Gallery/Antiques/Img1After.png" alt="">
+                    <footer>
+                        <button id="Img1BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img1AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img1After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+           
+            </ul>
           
 
           

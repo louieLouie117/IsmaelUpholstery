@@ -182,19 +182,19 @@ button{
 }
 
 
-.Gallery-Container{
+.GalleryCover-Container{
     display: grid;
     margin-top: 0px;
     /* height: 400px; */
 }
 
 
-.Gallery-Container ul::-webkit-scrollbar{
+.GalleryCover-Container ul::-webkit-scrollbar{
    display: none;
 }
 
 
-.Gallery-Container ul{
+.GalleryCover-Container ul{
     display: flex;
     overflow: scroll;
     width: auto;
@@ -203,7 +203,7 @@ button{
 }
 
 
-.Gallery-Container ul li{
+.GalleryCover-Container ul li{
     display: grid;
     row-gap: 10px;
     justify-items: center;
@@ -214,12 +214,12 @@ button{
 
 }
 
-.Gallery-Container ul li h2{
+.GalleryCover-Container ul li h2{
     justify-self: left;
     padding-left: 10px;
 }
 
-.Gallery-Container ul li img{
+.GalleryCover-Container ul li img{
     width: 300px;
     height: auto;
     grid-row: 2/3;
@@ -230,7 +230,7 @@ button{
 }
 
 
-.Gallery-Container ul li button{
+.GalleryCover-Container ul li button{
     background: rgba(0, 0, 0, 0.57);
     color: white;
     border: solid white 1px;
@@ -260,7 +260,13 @@ button{
     justify-items: center;
 }
 
-.GalleryTemplate-Container button{
+.GalleryTemplate-Container ul {
+    display: grid;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.GalleryTemplate-Container>button{
     color: white;
     border: solid 2px white;
     background: rgba(0, 0, 0, 0.637);
@@ -272,4 +278,40 @@ button{
 
 #GalleryTemplate{
     display: none;
+}
+
+.GalleryTemplate-Container ul li footer{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    background: whitesmoke;
+    height: 50px;
+    justify-items: center;
+    border-radius: 0  0 10px 10px;
+}
+
+
+.GalleryTemplate-Container ul li footer button{
+    height: 45px;
+    width: 130px;
+    font: 1.2em sans-serif;
+    border-bottom: solid 3px white;
+
+}
+
+.GalleryTemplate-Container ul li footer button:last-of-type {
+    border-bottom: solid 3px #006D75;
+    color: #006D75;
+}
+
+
+
+
+.BeforeAfter{
+    display: grid;
+}
+
+.BeforeAfter img{
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
