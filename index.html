@@ -589,7 +589,65 @@
             }
             if(e.target.id === "TuftedBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
-                $(``).prependTo("#GalleryTemplate")
+                $(`
+                <li class="BeforeAfter"> 
+                    <img id="Img1Before" src="/Assets/Gallery/Tufted/Img1Before.png" alt="">
+                    <img id="Img1After" src="/Assets/Gallery/Tufted/Img1After.png" alt="">
+                    <footer>
+                        <button id="Img1BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img1AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Tufted/Img2Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Tufted/Img2After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                
+                <li class="BeforeAfter"> 
+                    <img id="Img3Before" src="/Assets/Gallery/Tufted/Img3Before.png" alt="">
+                    <img id="Img3After" src="/Assets/Gallery/Tufted/Img3After.png" alt="">
+                    <footer>
+                        <button id="Img3BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img3AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                
+                <li class="BeforeAfter"> 
+                    <img id="Img4Before" src="/Assets/Gallery/Tufted/Img4Before.png" alt="">
+                    <img id="Img4After" src="/Assets/Gallery/Tufted/Img4After.png" alt="">
+                    <footer>
+                        <button id="Img4BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img4AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                
+                <li class="BeforeAfter"> 
+                    <img id="Img5Before" src="/Assets/Gallery/Tufted/Img5Before.png" alt="">
+                    <img id="Img5After" src="/Assets/Gallery/Tufted/Img5After.png" alt="">
+                    <footer>
+                        <button id="Img5BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img5AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                
+                <li class="BeforeAfter"> 
+                    <img id="Img6Before" src="/Assets/Gallery/Tufted/Img6Before.png" alt="">
+                    <img id="Img6After" src="/Assets/Gallery/Tufted/Img6After.png" alt="">
+                    <footer>
+                        <button id="Img6BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img6AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                
+                
+                
+                
+                `).prependTo("#GalleryTemplate")
 
             }
 
@@ -708,6 +766,7 @@
             <ul id="GalleryTemplate" >
 
           
+             
            
                    
               
