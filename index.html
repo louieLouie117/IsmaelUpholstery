@@ -154,24 +154,62 @@
             }
             if(e.target.id === "ChannelBackBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(`
+
+                <li class="BeforeAfter"> 
+                    <img id="Img1Before" src="/Assets/Gallery/ChanelBack//Img1Before.png" alt="">
+                    <img id="Img1After" src="/Assets/Gallery/ChanelBack/Img1After.png" alt="">
+                    <footer>
+                        <button id="Img1BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img1AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/ChanelBack//Img2Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/ChanelBack/Img2After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                
+
+                <li> 
+                    <img src="/Assets/Gallery/ChanelBack/Img4.png" alt="">
+                </li>
+                
+                `).prependTo("#GalleryTemplate")
             }
             if(e.target.id === "ClassicsBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(``).prependTo("#GalleryTemplate")
+
             }
             if(e.target.id === "DetailWorkBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(``).prependTo("#GalleryTemplate")
+
             }
             if(e.target.id === "DreamBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(``).prependTo("#GalleryTemplate")
+
             }
             if(e.target.id === "ModernBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(``).prependTo("#GalleryTemplate")
+
             }
             if(e.target.id === "TransformationBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(``).prependTo("#GalleryTemplate")
+
             }
             if(e.target.id === "TuftedBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(``).prependTo("#GalleryTemplate")
+
             }
 
         });
@@ -288,6 +326,8 @@
             <button onclick="GalleryHandler(event)">X</button>
             <ul id="GalleryTemplate" >
 
+
+          
               
    
             </ul>
