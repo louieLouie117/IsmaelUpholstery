@@ -13,6 +13,12 @@
 
     <script>           
     const GalleryHandler = (e)=>{
+
+        document.getElementById("HeroBanner").style.filter = "blur(17px)"
+        document.getElementById("ContactInfo").style.filter = "blur(17px)"
+        document.getElementById("GalleryCover").style.filter = "blur(17px)"
+
+
         
         console.log(e.target.id)
         document.querySelector("#GalleryTemplateContainer").style.display ="Grid";
@@ -20,6 +26,9 @@
 
         if(e.target.innerText === "X"){
             document.querySelector("#GalleryTemplateContainer").style.display ="none";
+            document.getElementById("HeroBanner").style.filter = "none"
+        document.getElementById("ContactInfo").style.filter = "none"
+        document.getElementById("GalleryCover").style.filter = "none"
         }
 
         $(document).ready(()=>{   
@@ -27,6 +36,79 @@
             if(e.target.id === "AntiquesBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
                 $(`
+                    
+                <li class="BeforeAfter"> 
+                    <img id="Img1Before" src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
+                    <img id="Img1After" src="/Assets/Gallery/Antiques/Img1After.png" alt="">
+                    <footer>
+                        <button id="Img1BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img1AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img2Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img2After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img3Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img3After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img4Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img4After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img5Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img5After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img6Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img6After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img7Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img7After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img8Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img8After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
                 
 
                      `).prependTo("#GalleryTemplate")
@@ -66,7 +148,7 @@
 
 <body>
     <header>
-        <div class="HeroBanner-Container">
+        <div class="HeroBanner-Container" id="HeroBanner">
             <h1>Ismael's Upholstery</h1>
             <picture>
                 <source media="(min-width: 1000px)" srcset="/Assets/BackgroundL2.png"/>
@@ -88,7 +170,7 @@
         </div>
     </header>
     <main>
-        <div class="ContactInfo-Container">
+        <div class="ContactInfo-Container" id="ContactInfo">
             <section>
                 <h2>Get a free estimate</h2>
                 <p>The best why to get started is to email or text me photos.</p>
@@ -120,7 +202,7 @@
         </div>
     </main>
     <footer>
-        <div class="GalleryCover-Container">
+        <div class="GalleryCover-Container" id="GalleryCover">
             <ul>
                 <li>
                     <h2>Antiques</h2>
@@ -172,24 +254,6 @@
             <ul id="GalleryTemplate" >
 
 
-                <li class="BeforeAfter"> 
-                    <img id="Img1Before" src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
-                    <img id="Img1After" src="/Assets/Gallery/Antiques/Img1After.png" alt="">
-                    <footer>
-                        <button id="Img1BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
-                        <button id="Img1AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
-                    </footer>
-                </li>
-
-                
-                <li class="BeforeAfter"> 
-                    <img id="Img2Before" src="/Assets/Gallery/Antiques/Img1Before.png" alt="">
-                    <img id="Img2After" src="/Assets/Gallery/Antiques/Img1After.png" alt="">
-                    <footer>
-                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
-                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
-                    </footer>
-                </li>
 
            
             </ul>

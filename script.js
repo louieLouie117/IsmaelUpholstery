@@ -1,22 +1,18 @@
 
 const BeforeAfterHandler = (e)=>{
-    let BTNtext = e.target.innerText;
-    let ImgID = e.target.id;
 
+    let BTNtext = e.target.innerText;
+
+    let ImgID = e.target.id;
+    ImgID = ImgID.replace("BTN", "")
 
     let sequenceNumber = e.target.id;
-
     sequenceNumber = sequenceNumber.replace("Img", "")
     sequenceNumber = sequenceNumber.replace("AfterBTN", "")
     sequenceNumber = sequenceNumber.replace("BeforeBTN", "")
-    ImgID = ImgID.replace("BTN", "")
-
 
     console.log(BTNtext)
     console.log(sequenceNumber, "s#")
-
-    // let resultString = "Img" + sequenceNumber + BTNtext
-    // console.log("Result", resultString)
 
     if(e.target.innerText === "After"){
         document.getElementById(ImgID).style.display ="block";
