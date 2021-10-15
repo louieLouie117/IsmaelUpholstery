@@ -20,7 +20,7 @@ const BeforeAfterHandler = (e)=>{
         document.getElementById("Img"+ sequenceNumber +"AfterBTN").style.color ="#006D75";
         document.getElementById("Img"+ sequenceNumber +"AfterBTN").style.borderBottom ="solid 3px #006D75";
         document.getElementById("Img"+ sequenceNumber +"BeforeBTN").style.color ="black";
-        document.getElementById("Img"+ sequenceNumber +"BeforeBTN").style.borderBottom ="solid 3px white";
+        document.getElementById("Img"+ sequenceNumber +"BeforeBTN").style.borderBottom ="solid 3px whitesmoke";
      }
 
     
@@ -33,7 +33,7 @@ const BeforeAfterHandler = (e)=>{
         document.getElementById("Img"+ sequenceNumber +"BeforeBTN").style.color ="#006D75";
         document.getElementById("Img"+ sequenceNumber +"BeforeBTN").style.borderBottom ="solid 3px #006D75";
         document.getElementById("Img"+ sequenceNumber +"AfterBTN").style.color ="black";
-        document.getElementById("Img"+ sequenceNumber +"AfterBTN").style.borderBottom ="solid 3px white";
+        document.getElementById("Img"+ sequenceNumber +"AfterBTN").style.borderBottom ="solid 3px whitesmoke";
 
         }
     

@@ -244,15 +244,12 @@ button{
     grid-column: 1/2;    
 }
 
-/* @media screen and (min-width: 1100px) {
-    
-} */
 
 
 
 .GalleryTemplate-Container{
     display: none;
-    background: rgba(0, 0, 0, 0.385);
+    background: rgba(0, 0, 0, 0.172);
     position: fixed;
     top: 0;
     left: 0;
@@ -267,6 +264,7 @@ button{
     row-gap: 50px;
     margin-top: 50px;
     padding-bottom: 100px;
+    align-items: flex-start;
 }
 
 .GalleryTemplate-Container>button{
@@ -298,7 +296,7 @@ button{
     height: 45px;
     width: 130px;
     font: 1.2em sans-serif;
-    border-bottom: solid 3px white;
+    border-bottom: solid 3px whitesmoke;
 
 }
 
@@ -317,4 +315,23 @@ button{
 .BeforeAfter img{
     grid-row: 1/2;
     grid-column: 1/2;
+}
+
+
+@media screen and (min-width: 900px) {
+    .GalleryTemplate-Container ul {
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 30px;
+    }
+        
+        
+    }
+
+@media screen and (min-width: 1100px) {
+.GalleryTemplate-Container ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+    
+    
 }
