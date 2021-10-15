@@ -24,14 +24,17 @@
         document.querySelector("#GalleryTemplateContainer").style.display ="Grid";
 
 
-        if(e.target.innerText === "X"){
+        $(document).ready(()=>{   
+
+            if(e.target.innerText === "X"){
             document.querySelector("#GalleryTemplateContainer").style.display ="none";
             document.getElementById("HeroBanner").style.filter = "none"
-        document.getElementById("ContactInfo").style.filter = "none"
-        document.getElementById("GalleryCover").style.filter = "none"
-        }
+            document.getElementById("ContactInfo").style.filter = "none"
+            document.getElementById("GalleryCover").style.filter = "none"
 
-        $(document).ready(()=>{   
+            $("#GalleryTemplate").empty()
+
+            }
 
             if(e.target.id === "AntiquesBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
@@ -116,6 +119,38 @@
 
             if(e.target.id === "CraftsmanshipBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
+                $(`
+                    
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img1c.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img2c.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img3c.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img4c.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img5c.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img6c.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img7c.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img8c.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Carfsmanship/Img9c.png" alt="">
+                </li>
+                
+
+                     `).prependTo("#GalleryTemplate")
             }
             if(e.target.id === "ChannelBackBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
@@ -253,9 +288,8 @@
             <button onclick="GalleryHandler(event)">X</button>
             <ul id="GalleryTemplate" >
 
-
-
-           
+              
+   
             </ul>
           
 

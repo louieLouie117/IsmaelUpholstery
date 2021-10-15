@@ -36,5 +36,6 @@ const BeforeAfterHandler = (e)=>{
         document.getElementById("Img"+ sequenceNumber +"AfterBTN").style.borderBottom ="solid 3px white";
 
         }
+    
 
 }
