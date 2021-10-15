@@ -566,7 +566,25 @@
             }
             if(e.target.id === "TransformationBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
-                $(``).prependTo("#GalleryTemplate")
+                $(`
+                <li> 
+                    <img src="/Assets/Gallery/Transformation/Img1.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Transformation/Img2.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Transformation/Img3.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Transformation/Img4.png" alt="">
+                </li>
+                <li> 
+                    <img src="/Assets/Gallery/Transformation/Img5.png" alt="">
+                </li>
+                
+                
+                `).prependTo("#GalleryTemplate")
 
             }
             if(e.target.id === "TuftedBTN"){
@@ -689,7 +707,7 @@
             <button onclick="GalleryHandler(event)">X</button>
             <ul id="GalleryTemplate" >
 
-
+          
            
                    
               
