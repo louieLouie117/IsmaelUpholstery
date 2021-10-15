@@ -463,7 +463,105 @@
             }
             if(e.target.id === "ModernBTN"){
                 document.querySelector("#GalleryTemplate").style.display ="grid";
-                $(``).prependTo("#GalleryTemplate")
+                $(`
+                <li class="BeforeAfter"> 
+                    <img id="Img1Before" src="/Assets/Gallery/Modern/Img1Before.png" alt="">
+                    <img id="Img1After" src="/Assets/Gallery/Modern/Img1After.png" alt="">
+                    <footer>
+                        <button id="Img1BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img1AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img2Before" src="/Assets/Gallery/Modern/Img2Before.png" alt="">
+                    <img id="Img2After" src="/Assets/Gallery/Modern/Img2After.png" alt="">
+                    <footer>
+                        <button id="Img2BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img2AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img3Before" src="/Assets/Gallery/Modern/Img3Before.png" alt="">
+                    <img id="Img3After" src="/Assets/Gallery/Modern/Img3After.png" alt="">
+                    <footer>
+                        <button id="Img3BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img3AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img4Before" src="/Assets/Gallery/Modern/Img4Before.png" alt="">
+                    <img id="Img4After" src="/Assets/Gallery/Modern/Img4After.png" alt="">
+                    <footer>
+                        <button id="Img4BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img4AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img5Before" src="/Assets/Gallery/Modern/Img5Before.png" alt="">
+                    <img id="Img5After" src="/Assets/Gallery/Modern/Img5After.png" alt="">
+                    <footer>
+                        <button id="Img5BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img5AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img6Before" src="/Assets/Gallery/Modern/Img6Before.png" alt="">
+                    <img id="Img6After" src="/Assets/Gallery/Modern/Img6After.png" alt="">
+                    <footer>
+                        <button id="Img6BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img6AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img7Before" src="/Assets/Gallery/Modern/Img7Before.png" alt="">
+                    <img id="Img7After" src="/Assets/Gallery/Modern/Img7After.png" alt="">
+                    <footer>
+                        <button id="Img7BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img7AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img8Before" src="/Assets/Gallery/Modern/Img8Before.png" alt="">
+                    <img id="Img8After" src="/Assets/Gallery/Modern/Img8After.png" alt="">
+                    <footer>
+                        <button id="Img8BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img8AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img9Before" src="/Assets/Gallery/Modern/Img9Before.png" alt="">
+                    <img id="Img9After" src="/Assets/Gallery/Modern/Img9After.png" alt="">
+                    <footer>
+                        <button id="Img9BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img9AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img10Before" src="/Assets/Gallery/Modern/Img10Before.png" alt="">
+                    <img id="Img10After" src="/Assets/Gallery/Modern/Img10After.png" alt="">
+                    <footer>
+                        <button id="Img10BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img10AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img11Before" src="/Assets/Gallery/Modern/Img11Before.png" alt="">
+                    <img id="Img11After" src="/Assets/Gallery/Modern/Img11After.png" alt="">
+                    <footer>
+                        <button id="Img11BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img11AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                <li class="BeforeAfter"> 
+                    <img id="Img12Before" src="/Assets/Gallery/Modern/Img12Before.png" alt="">
+                    <img id="Img12After" src="/Assets/Gallery/Modern/Img12After.png" alt="">
+                    <footer>
+                        <button id="Img12BeforeBTN" onclick="BeforeAfterHandler(event)">Before</button>
+                        <button id="Img12AfterBTN" onclick="BeforeAfterHandler(event)">After</button>
+                    </footer>
+                </li>
+                
+                `).prependTo("#GalleryTemplate")
 
             }
             if(e.target.id === "TransformationBTN"){
@@ -590,6 +688,9 @@
         <div class="GalleryTemplate-Container" id="GalleryTemplateContainer">
             <button onclick="GalleryHandler(event)">X</button>
             <ul id="GalleryTemplate" >
+
+
+           
                    
               
             </ul>
