@@ -298,6 +298,8 @@ button{
     width: 50px;
     border-radius: 50px;
     margin-top: 20px;
+    position: sticky;
+    top: 10px;
 }
 
 #GalleryTemplate{
