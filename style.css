@@ -6,6 +6,29 @@ body{
 }
 
 
+#Img1After,#Img2After,#Img3After,#Img4After,#Img5After,#Img6After,#Img7After,#Img8After,#Img9After,#Img10After
+{
+    display: none;
+}
+
+
+#Img1After,#Img2After,#Img3After,#Img4After,#Img5After,#Img6After,#Img7After,#Img8After,#Img9After,#Img10After
+{
+    display: none;
+}
+
+
+#Img11After,#Img12After,#Img13After,#Img14After,#Img15After,#Img16After,#Img17After,#Img18After,#Img19After,#Img20After
+{
+    display: none;
+}
+
+
+#Img21After,#Img22After,#Img23After,#Img24After,#Img25After
+{
+    display: none;
+}
+
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -275,6 +298,8 @@ button{
     width: 50px;
     border-radius: 50px;
     margin-top: 20px;
+    position: sticky;
+    top: 10px;
 }
 
 #GalleryTemplate{
@@ -300,7 +325,7 @@ button{
 
 }
 
-.GalleryTemplate-Container ul li footer button:last-of-type {
+.GalleryTemplate-Container ul li footer button:first-of-type {
     border-bottom: solid 3px #006D75;
     color: #006D75;
 }
