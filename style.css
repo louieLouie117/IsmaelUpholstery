@@ -220,7 +220,7 @@ button{
 
 
 .GalleryCover-Container ul{
-    display: flex;
+    display: grid;
     overflow: scroll;
     width: auto;
     column-gap: 40px;
@@ -236,11 +236,12 @@ button{
     font: 1em sans-serif;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: normal;
+    text-align: center;
+
 
 }
 
 .GalleryCover-Container ul li h2{
-    justify-self: left;
     padding-left: 10px;
 }
 
@@ -344,6 +345,10 @@ button{
 
 
 @media screen and (min-width: 900px) {
+
+.GalleryCover-Container ul{
+    display: flex;
+}
     .GalleryTemplate-Container ul {
         grid-template-columns: 1fr 1fr ;
         column-gap: 30px;
